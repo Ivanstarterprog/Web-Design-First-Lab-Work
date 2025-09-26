@@ -1,3 +1,17 @@
-*{
-    
+.hero{
+    background-image: url("../Assets/Img/hero background image.png");
+    background-size: cover;
+
+    .content_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 580px;
+        padding: 40px 120px 40px 140px;
+        width: 50%;
+        gap: 34px;
+        h1, p, div{
+            margin: 0px;
+        }
+    }
 }

@@ -1,20 +1,63 @@
 :root{
     --base-text-size: 1rem;
     --menu-text-size: 0.875rem;
+    --hero-big-text-size: 4rem;
+    --hero-small-text-size: 1.2rem;
+    --violet-color: #8A53FF;
+    --dark-violet-color: #42277e;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../Assets/Fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: ChangaOne;
+    src: url("../Assets/Fonts/ChangaOne-Regular.ttf");
 }
 
 html{
     font-size: 18px;
 }
 
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 *{
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: var(--base-text-size);
 }
 
 .main_menu{
-    font-size: var(--menu-text-size)
+    font-size: var(--menu-text-size);
+    nav {
+        li a:hover{
+            color:var(--dark-violet-color);
+        }
+        li[data-current-page="true"]{
+            color: var(--violet-color);
+        }
+    }
+}
+
+.hero .content_container{
+    h1, h1 span {
+        font-family: ChangaOne;
+        font-size: var(--hero-big-text-size);
+        span{
+            color:var(--violet-color);
+        }
+    }
+    p{
+        font-size: var(--hero-small-text-size);
+        color: #434343;
+    }
 }
