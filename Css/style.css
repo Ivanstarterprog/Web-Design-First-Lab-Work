@@ -21,6 +21,10 @@ html{
     font-size: 18px;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     margin: 0px;
     display: flex;
@@ -34,6 +38,7 @@ body{
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: var(--base-text-size);
+    letter-spacing: 0%;
 }
 
 .main_menu{

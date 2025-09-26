@@ -13,5 +13,19 @@
         h1, p, div{
             margin: 0px;
         }
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            a:nth-child(2){
+                color: black;
+            }            
+        }
     }
 }
