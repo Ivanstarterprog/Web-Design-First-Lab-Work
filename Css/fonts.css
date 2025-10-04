@@ -3,8 +3,15 @@
     --menu-text-size: 0.875rem;
     --hero-big-text-size: 4rem;
     --hero-small-text-size: 1.2rem;
-    --violet-color: #8A53FF;
-    --dark-violet-color: #42277e;
+    --big-headers-text-size: 2.16rem;
+    --primary-color: #8A53FF;
+    --secondary-color: #42277e;
+    --text-color: #434343;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("../Assets/Fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
@@ -19,6 +26,7 @@
 
 html{
     font-size: 18px;
+    color: var(--text-color)
 }
 
 a{
@@ -30,6 +38,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+img{
+    border-radius: 8px;
 }
 
 *{
@@ -48,8 +60,36 @@ body{
             color:var(--dark-violet-color);
         }
         li[data-current-page="true"]{
-            color: var(--violet-color);
+            color: var(--primary-color);
         }
+    }
+}
+
+.block_header{
+    text-align: center;
+    h3{
+        font-family: RobotoBold;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin: 0px;
+        text-transform: uppercase;
+        letter-spacing: 6%;
+    }
+    h2{
+        font-family: ChangaOne;
+        font-size: var(--big-headers-text-size);
+        margin: 0px;
+        line-height: 40px;
+    }
+}
+
+.information_container{
+    .block_header{
+        text-align: left;        
+    }
+    p{
+        line-height: 33px;
+        margin: 0px;
     }
 }
 
@@ -58,11 +98,10 @@ body{
         font-family: ChangaOne;
         font-size: var(--hero-big-text-size);
         span{
-            color:var(--violet-color);
+            color:var(--primary-color);
         }
     }
     p{
         font-size: var(--hero-small-text-size);
-        color: #434343;
     }
 }

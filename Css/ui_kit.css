@@ -1,7 +1,52 @@
 .button {
+    display:flex;
+    align-items: center;
     background-color: #8A53FF;
     color: #FFFFFF;
     border-radius: 4px;
     width: 165px;
+    justify-content: center;
     height: 46px;
+}
+
+.main_menu{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 3vw;
+
+    .logo{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex; 
+        flex-direction: row;
+        gap: 18px;
+        list-style-type: none;
+
+        .separator{
+            border: 1px solid #EEEEEE;
+        }
+
+        li a:hover{
+            cursor: pointer;
+        }
+
+    }
+}
+
+.watch_element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: black;     
+}
+.information_container{
+    .watch_element{
+        color: #8A53FF;
+    }
 }
