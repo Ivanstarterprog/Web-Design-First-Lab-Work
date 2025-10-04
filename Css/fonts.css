@@ -4,9 +4,12 @@
     --hero-big-text-size: 4rem;
     --hero-small-text-size: 1.2rem;
     --big-headers-text-size: 2.16rem;
+    --discovery-card-header-size: 1.33rem;
+    --discovery-card-discover-size: 0.875rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
+    --accent-text-color: #000000;
 }
 
 @font-face {
@@ -65,7 +68,16 @@ img{
     }
 }
 
+.content_container{
+    p{
+        color: var(--accent-text-color);
+        font-size: var(--hero-small-text-size);
+    }
+}
+
 .block_header{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     h3{
         font-family: RobotoBold;
@@ -93,6 +105,12 @@ img{
     }
 }
 
+.recent_story{
+    .block_header{
+        gap: 16px;
+    }
+}
+
 .hero .content_container{
     h1, h1 span {
         font-family: ChangaOne;
@@ -103,5 +121,22 @@ img{
     }
     p{
         font-size: var(--hero-small-text-size);
+    }
+}
+
+.discover_card{
+    text-align: center;
+    h4{
+        font-family: ChangaOne;
+        font-size: var(--discovery-card-header-size);
+        line-height: 36px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    p{
+        font-family: Roboto;
+        font-size: var(--discovery-card-discover-size);
+        color: var(var(--primary-color));
+        margin: 0px;
     }
 }

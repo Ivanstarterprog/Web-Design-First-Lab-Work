@@ -54,11 +54,29 @@
     flex-direction: column;
     gap: 48px;
 }
-discover_cards_section{
-    display: flex;
+.discover_cards_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
 }
 
 .discover_card{
-    object-fit: cover;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: max(298px);
+        height: max(347px);
+        object-fit: cover;
+    }
+}
+
+.recent_story{
+    padding: 83px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
