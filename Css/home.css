@@ -21,7 +21,7 @@
     }
 }
 
-.information_block{
+.featured_destination_block{
     padding: 107px 140px;
     display:  grid;
     grid-template-columns: repeat(2, 1fr);
