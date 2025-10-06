@@ -8,11 +8,13 @@
     --discovery-card-discover-size: 0.875rem;
     --recent-story-card-header-size: 1.33rem;
     --recent-story-card-discover-size: 0.875rem;
+    --form-input-size: 0.875rem;
     --footer-menu-text-size: 0.77rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
     --accent-text-color: #000000;
+    --form-text-color: #576074;
     --neutral-text-color: #939EB4;
 }
 
@@ -147,6 +149,20 @@ h1,h2,h3,h4{
         font-size: var(--discovery-card-discover-size);
         color: var(var(--primary-color));
         margin: 0px;
+    }
+}
+
+.join_community_section{
+    form{
+        .card_desription{
+            p{
+                color: var(--form-text-color);
+            }
+        }
+        input[type="text"], select, textarea, select option{
+            letter-spacing: 0.15px;
+            color: var(--form-text-color);
+        }
     }
 }
 

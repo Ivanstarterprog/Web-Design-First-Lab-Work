@@ -107,27 +107,38 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h3>Let’s build a community</h3>
-            <h2>Join our next destination</h2>
+        <section class="join_community_section">
+            <div class="block_header">
+                <h3>Let’s build a community</h3>
+                <h2>Join our next destination</h2>
+            </div>
             <form>
-                <h4></h4>
-                <p></p>
-                <input type="text" name="" id="">
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <input type="text" name="" id="">
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <textarea name="" id=""></textarea>
+                <div class="card_desription">
+                    <h4>Share your travels</h4>
+                    <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+                </div>
+                <div class="form_fields">
+                    <input type="text" name="destination_name" id=""  placeholder="Destination name">
+                    <select name="country_of_destination" id="">
+                        <option value="" disabled selected hidden>Country of destination</option>
+                        <option value="">Japan</option>
+                        <option value="">America</option>
+                        <option value="">Russia</option>
+                        <option value="">China</option>
+                    </select>
+                    <input type="text" name="your_name" id="" placeholder="Your Name">
+                    <select name="Shooting_category" id="">
+                        <option value="" disabled selected hidden>Shooting category</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <textarea name="" id="" 
+                    placeholder="Describe what kind of photos you want to focus on"
+                    rows="4" ></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
             </form>
         </section>
         <section class="recent_story">

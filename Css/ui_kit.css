@@ -4,9 +4,16 @@
     background-color: #8A53FF;
     color: #FFFFFF;
     border-radius: 4px;
+    border: 1px solid #8A53FF;
     width: 165px;
     justify-content: center;
     height: 46px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #FFFFFF;
+    color: #8A53FF;
 }
 
 .main_menu{
@@ -14,7 +21,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 3vw;
+    padding: 2px 119px;
 
     .logo{
         display: flex; 
@@ -49,6 +56,42 @@
 .information_container{
     .watch_element{
         color: #8A53FF;
+    }
+}
+
+.join_community_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 120px 0px;
+    background-image: url("../Assets/Img/Join Comunity Background.png");
+    block-header{
+        gap: 15px;
+    }
+    form{
+        width: 657px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        background-color: #FFFFFF;
+        padding: 28px 30px;
+        border-radius: 12px;
+        .card_desription{
+            gap: 6px;
+        }
+    }
+}
+
+.form_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input[type="text"], select, textarea, select option{
+        padding: 16px 12px;
+        border: 1px solid;
+        border-radius: 4px;
+        resize:none;
     }
 }
 
