@@ -24,7 +24,7 @@
 .featured_destination_block{
     padding: 107px 140px;
     display:  grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -79,4 +79,61 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+.recent_story_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.big_recent_story_card{
+    padding: 0px 20px;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    div{
+        display: flex;
+        gap: 28px;
+        padding: 14px 24px;
+        width: 100%;
+        align-items: center;
+        .card_desription{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+            h4, p{
+                margin: 0px;
+            }
+        }
+        img{
+                width: 48px;
+                height: 48px;
+            }
+    }
+}
+
+.recent_story_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recent_story_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px, 11px;
+    gap: 20px;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0px 0px 0px;
+        gap: 6px;
+    }
 }

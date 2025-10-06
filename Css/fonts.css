@@ -6,6 +6,8 @@
     --big-headers-text-size: 2.16rem;
     --discovery-card-header-size: 1.33rem;
     --discovery-card-discover-size: 0.875rem;
+    --recent-story-card-header-size: 1.33rem;
+    --recent-story-card-discover-size: 0.875rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
@@ -45,6 +47,10 @@ body{
 
 img{
     border-radius: 8px;
+}
+
+h1,h2,h3,h4{
+    font-family: ChangaOne;
 }
 
 *{
@@ -88,7 +94,6 @@ img{
         letter-spacing: 6%;
     }
     h2{
-        font-family: ChangaOne;
         font-size: var(--big-headers-text-size);
         margin: 0px;
         line-height: 40px;
@@ -113,9 +118,9 @@ img{
 
 .hero .content_container{
     h1, h1 span {
-        font-family: ChangaOne;
         font-size: var(--hero-big-text-size);
         span{
+            font-family: ChangaOne;
             color:var(--primary-color);
         }
     }
@@ -126,14 +131,16 @@ img{
 
 .discover_card{
     text-align: center;
+}
+
+.card_desription{
     h4{
-        font-family: ChangaOne;
         font-size: var(--discovery-card-header-size);
         line-height: 36px;
         font-weight: 400;
         margin: 0px;
     }
-    p{
+    p a{
         font-family: Roboto;
         font-size: var(--discovery-card-discover-size);
         color: var(var(--primary-color));
