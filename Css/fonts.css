@@ -8,10 +8,12 @@
     --discovery-card-discover-size: 0.875rem;
     --recent-story-card-header-size: 1.33rem;
     --recent-story-card-discover-size: 0.875rem;
+    --footer-menu-text-size: 0.77rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
     --accent-text-color: #000000;
+    --neutral-text-color: #939EB4;
 }
 
 @font-face {
@@ -146,4 +148,10 @@ h1,h2,h3,h4{
         color: var(var(--primary-color));
         margin: 0px;
     }
+}
+
+.footer_menu *{
+    color: var(--neutral-text-color);
+    font-size: var(--footer-menu-text-size);
+    text-align: center;
 }
