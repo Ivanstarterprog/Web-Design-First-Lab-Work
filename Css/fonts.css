@@ -8,6 +8,10 @@
     --discovery-card-discover-size: 0.875rem;
     --recent-story-card-header-size: 1.33rem;
     --recent-story-card-discover-size: 0.875rem;
+    --blog-header-category-size: 1rem;
+    --blog-header-title-size: 2.77rem;
+    --blog-author-name-size: 0.875rem;
+    --blog-author-job-size: 0.77rem;
     --form-input-size: 0.875rem;
     --footer-menu-text-size: 0.77rem;
     --primary-color: #8A53FF;
@@ -16,6 +20,8 @@
     --accent-text-color: #000000;
     --form-text-color: #576074;
     --neutral-text-color: #939EB4;
+    --blog-author-nickname-color: #495367;
+    --blog-author-job-color: #A2A7B1;
 }
 
 @font-face {
@@ -53,12 +59,11 @@ img{
     border-radius: 8px;
 }
 
-h1,h2,h3,h4{
+h1,h2,h4{
     font-family: ChangaOne;
 }
 
 *{
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -165,6 +170,33 @@ h1,h2,h3,h4{
         }
     }
 }
+
+.blog_article_header{
+    .block_header{
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0px;
+        h3{
+            font-size: var(--blog-header-category-size);
+        }
+        h2{
+            font-size: var(--blog-header-title-size);
+        }
+    }
+}
+
+.blog_author{
+    h5{
+        font-size: var(--blog-author-name-size);
+        color: var(--blog-author-nickname-color)
+    }
+    p{
+        font-size: var(--blog-author-job-size);
+        color: var(--blog-author-job-color);
+        font-style: italic;
+    }
+}
+
 
 .footer_menu *{
     color: var(--neutral-text-color);
