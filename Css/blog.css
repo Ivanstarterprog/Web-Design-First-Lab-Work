@@ -30,3 +30,63 @@
         }
     }
 }
+.blog_callout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .callout_cards_container{
+        display: grid;
+        grid-template-areas: 
+        "first second"
+        "first second"
+        "first third";
+        gap: 15px;
+        .callout_card{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .first_callout{
+            grid-area: first;
+        }
+        .second_callout{
+            grid-area: second;
+        }
+        .third_callout{
+            grid-area: third;
+        }
+    }
+    .blog_callout_copyrighting{
+        display: flex;
+        flex-direction: column;
+        padding: 36px 0px 36px 34px;
+        gap: 30px;
+        .quotes_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 17px;
+        }
+    }
+}
+.higlights_container{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.highlights_cards_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 27px;
+    .higlight_card{
+        width: 288px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:scale-down;
+            border-radius: 8px;
+        }
+    }
+}

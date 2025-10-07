@@ -16,6 +16,7 @@
     --footer-menu-text-size: 0.77rem;
     --blog-text-header-size: 1.77rem;
     --blog-text-size: 0.875rem;
+    --blog-quotes-size: 2.33rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
@@ -212,6 +213,15 @@ h1,h2,h3,h4{
     }
     p{
         font-size: var(--blog-text-size);
+    }
+}
+
+.quotes_container{
+    h2{
+        font-size: var(--blog-quotes-size);
+        margin: 0px;
+        line-height: 47px;
+        font-style: italic;
     }
 }
 
