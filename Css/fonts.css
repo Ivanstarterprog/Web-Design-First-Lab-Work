@@ -14,6 +14,8 @@
     --blog-author-job-size: 0.77rem;
     --form-input-size: 0.875rem;
     --footer-menu-text-size: 0.77rem;
+    --blog-text-header-size: 1.77rem;
+    --blog-text-size: 0.875rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
@@ -59,7 +61,7 @@ img{
     border-radius: 8px;
 }
 
-h1,h2,h4{
+h1,h2,h3,h4{
     font-family: ChangaOne;
 }
 
@@ -197,6 +199,21 @@ h1,h2,h4{
     }
 }
 
+.blog_text_paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3, p{
+        margin: 0px;
+    }
+    h3{
+        font-size: var(--blog-text-header-size);
+        line-height: 36px;
+    }
+    p{
+        font-size: var(--blog-text-size);
+    }
+}
 
 .footer_menu *{
     color: var(--neutral-text-color);
