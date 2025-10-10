@@ -67,6 +67,14 @@
     flex-direction: column;
     padding: 30px;
     gap: 24px;
+    @media (max-width: 768px) {
+        padding: 15px;
+        gap: 12px;
+    }
+    @media (max-width: 480px) {
+        padding: 10px;
+        gap: 6px;
+    }      
     div{
         display: flex;
         flex-direction: column;
@@ -75,10 +83,18 @@
 }
 
 .discover_world{
-    padding: 24px 119px 70px 119px; 
     display: flex;
     flex-direction: column;
+    padding: 24px 119px 70px 119px; 
     gap: 48px;
+    @media (max-width: 768px) {
+        padding: 24px 59px 70px 59px; 
+        gap: 24px;
+    }
+    @media (max-width: 480px) {
+        padding: 10px;
+        gap: 12px;
+    }      
 }
 .discover_cards_section{
     display: grid;
