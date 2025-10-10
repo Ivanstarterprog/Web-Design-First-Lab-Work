@@ -118,13 +118,21 @@
 
 .recent_story{
     padding: 83px 120px;
+    @media (max-width: 480px) {
+        padding: 10px;
+        gap: 12px;
+    } 
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 .recent_story_container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1150px) {
+        flex-direction: column;
+        gap: 20px;
+    } 
 }
 
 .big_recent_story_card{
@@ -137,15 +145,25 @@
     }
     div{
         display: flex;
+        flex-direction: row;
         gap: 28px;
         padding: 14px 24px;
         width: 100%;
         align-items: center;
+        @media (max-width: 1150px) {
+            padding: 7px 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        } 
         .card_desription{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 2px;
+            @media (max-width: 1150px) {
+                padding: 0px;
+            } 
             h4, p{
                 margin: 0px;
                 height: 100% ;
@@ -161,14 +179,28 @@
 .recent_story_list{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    @media (max-width: 1150px) {
+        padding: 7px 12px;
+        gap: 15px;
+    } 
 }
 
 .recent_story_card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
     padding: 10px, 11px;
     gap: 20px;
+    @media (max-width: 1150px) {
+        flex-direction: column;
+        gap: 0px;
+        .card_desription{
+            gap: 0px;
+            padding: 0px;
+            p{
+                margin: 0px;
+            }
+        }
+    } 
     img{
         width: 100%;
         object-fit: cover;
