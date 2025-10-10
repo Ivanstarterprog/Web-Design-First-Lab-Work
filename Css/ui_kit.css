@@ -16,6 +16,31 @@
     color: #8A53FF;
 }
 
+.video_container{
+    width: 100%;
+    display: grid;
+    grid-template: "video-area";
+    place-items: center;
+    *{
+        grid-area: video-area;
+    }
+    video{
+        width: 100%;
+    }
+    .customPlayButton{
+        background-image: url("../Assets/Img/Play button.svg");
+        z-index: 10;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: clamp(25px, 100%, 105px);
+        height: clamp(25px, 100%, 105px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8; 
+    }
+}
+
 .main_menu{
     display: flex; 
     flex-direction: row;
