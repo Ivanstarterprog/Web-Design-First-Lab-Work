@@ -7,6 +7,15 @@
     flex-direction: column;
     align-items: center;
     padding: 46px 258px;
+    @media (max-width: 768px) {
+        padding: 46px 50px;
+    }   
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
     gap: 35px;
 }
 
@@ -69,6 +78,9 @@
         display: flex;
         flex-direction: column;
         padding: 36px 0px 36px 34px;
+        @media (max-width: 768px) {
+            padding: 36px 6px ;
+        }
         gap: 30px;
         .quotes_container{
             display: flex;

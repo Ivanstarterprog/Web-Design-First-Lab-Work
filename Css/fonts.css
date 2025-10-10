@@ -43,10 +43,23 @@
     font-family: ChangaOne;
     src: url("../Assets/Fonts/ChangaOne-Regular.ttf");
 }
-
-html{
+body{
     font-size: 18px;
+    width: 100%;
     color: var(--text-color)
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 a{
@@ -74,6 +87,9 @@ h1,h2,h3,h4{
     font-weight: 400;
     font-size: var(--base-text-size);
     letter-spacing: 0%;
+    transition: font-size 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .main_menu{

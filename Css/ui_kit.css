@@ -46,19 +46,32 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 2px 119px;
-
+    @media (max-width: 768px) {
+        padding: 2px 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 2px 20px;
+    }
     .logo{
-        display: flex; 
-        flex-direction: column;
+        img{
+            width: 10vw;
+        }
     }
 
     nav{
         display: flex; 
         flex-direction: row;
+        align-items: center;
         gap: 18px;
         list-style-type: none;
-
+        @media (max-width: 768px) {
+            gap: 9px;
+        }
+        @media (max-width: 480px) {
+            gap: 4px;
+        }
         .separator{
             border: 1px solid #EEEEEE;
         }
@@ -90,12 +103,13 @@
     align-items: center;
     gap: 30px;
     padding: 120px 0px;
+    width: 100%;
     background-image: url("../Assets/Img/Join Comunity Background.png");
     block-header{
         gap: 15px;
     }
     form{
-        width: 657px;
+        max-width: 657px;
         display: flex;
         flex-direction: column;
         gap: 17px;
