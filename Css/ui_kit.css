@@ -95,6 +95,17 @@
     }
 }
 
+.disclamer_block{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 19px 29px;
+    background-color: var(--disclamer-background);
+    h6, p{
+        margin: 0px;
+    }
+}
+
 .footer_menu{
     list-style: none;
     display: flex;

@@ -1,3 +1,7 @@
+:root{
+    --disclamer-background: #FAFAFA;
+}
+
 .blog_article{
     display: flex;
     flex-direction: column;
@@ -95,3 +99,4 @@
         }
     }
 }
+

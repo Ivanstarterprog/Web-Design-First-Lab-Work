@@ -17,6 +17,7 @@
     --blog-text-header-size: 1.77rem;
     --blog-text-size: 0.875rem;
     --blog-quotes-size: 2.33rem;
+    --disclamer-text-size: 0.875rem;
     --blog-highlight-card-text-size: 0.77rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
@@ -236,4 +237,15 @@ h1,h2,h3,h4{
     font-size: var(--blog-highlight-card-text-size);
     font-style: italic;
     line-height: 22px;
+}
+
+.disclamer_block{
+    h6{
+        font-weight: 700;
+        
+    }
+    h6, p{
+        font-size: var(--disclamer-text-size);
+        line-height: 26px;
+    }
 }
