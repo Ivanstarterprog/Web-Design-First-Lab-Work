@@ -43,11 +43,6 @@
     font-family: ChangaOne;
     src: url("../Assets/Fonts/ChangaOne-Regular.ttf");
 }
-body{
-    font-size: 18px;
-    width: 100%;
-    color: var(--text-color)
-}
 
 
 @media (max-width: 768px) {
@@ -71,6 +66,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 18px;
+    width: 100%;
+    color: var(--text-color)
 }
 
 img{
