@@ -79,13 +79,18 @@
 .highlights_cards_container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
     gap: 27px;
-    .higlight_card{
-        width: 288px;
+    .highlight_card{
+        width: 100%;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
         img{
             width: 100%;
-            height: 100%;
-            object-fit:scale-down;
+            height: max(397px);
+            object-fit: cover;
             border-radius: 8px;
         }
     }

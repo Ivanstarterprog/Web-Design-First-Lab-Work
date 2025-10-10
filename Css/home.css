@@ -106,6 +106,7 @@
             gap: 2px;
             h4, p{
                 margin: 0px;
+                height: 100% ;
             }
         }
         img{

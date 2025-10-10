@@ -17,6 +17,7 @@
     --blog-text-header-size: 1.77rem;
     --blog-text-size: 0.875rem;
     --blog-quotes-size: 2.33rem;
+    --blog-highlight-card-text-size: 0.77rem;
     --primary-color: #8A53FF;
     --secondary-color: #42277e;
     --text-color: #434343;
@@ -229,4 +230,10 @@ h1,h2,h3,h4{
     color: var(--neutral-text-color);
     font-size: var(--footer-menu-text-size);
     text-align: center;
+}
+
+.highlight_card{
+    font-size: var(--blog-highlight-card-text-size);
+    font-style: italic;
+    line-height: 22px;
 }
