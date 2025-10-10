@@ -49,6 +49,10 @@
     flex-direction: row;
     @media (max-width: 1150px) {
         flex-direction: column;
+        .watch_element{
+            justify-content: center;
+            width: 100%;
+        }
     }
     align-items: center;
     gap: 20px;
@@ -137,6 +141,9 @@
 
 .big_recent_story_card{
     padding: 0px 20px;
+    @media (max-width: 1150px) {
+        padding: 7px 12px;
+    } 
     height: 100%;
     img{
         width: 100%;
