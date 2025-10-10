@@ -108,6 +108,10 @@
     block-header{
         gap: 15px;
     }
+    @media (max-width: 1150px) {
+        padding: 60px 0px;
+        gap: 15px;
+    }
     form{
         max-width: 657px;
         display: flex;
