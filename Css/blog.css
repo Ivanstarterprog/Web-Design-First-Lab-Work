@@ -10,12 +10,6 @@
     @media (max-width: 768px) {
         padding: 46px 50px;
     }   
-
-@media (max-width: 480px) {
-    html {
-        font-size: 12px;
-    }
-}
     gap: 35px;
 }
 
