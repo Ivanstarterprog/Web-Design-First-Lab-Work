@@ -99,7 +99,7 @@
         font-weight: 400;
         img{
             width: 100%;
-            height: max(397px);
+            aspect-ratio: 3/4;
             object-fit: cover;
             border-radius: 8px;
         }
