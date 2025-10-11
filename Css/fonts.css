@@ -45,6 +45,9 @@
     src: url("../Assets/Fonts/ChangaOne-Regular.ttf");
 }
 
+html {
+    font-size: 18px;
+}
 
 @media (max-width: 768px) {
     html {
