@@ -1,199 +1,225 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/fonts.css">
-    <link rel="stylesheet" href="Css/home.css">
-    <link rel="stylesheet" href="Css/ui_kit.css">
-    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/fonts.css" />
+    <link rel="stylesheet" href="Css/home.css" />
+    <link rel="stylesheet" href="Css/ui_kit.css" />
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon" />
     <title>Talking Travel</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="main_menu">
-        <a href="index.html" class="logo">
-            <img src="assets/img/header logo.svg">
-        </a>
-        <nav>
-            <li data-current-page="true"><a href="index.html">Home</a></li>
-            <li><a href="pages/blog/blog.html">Story</a></li>
-            <li><a>Gallery</a></li>
-            <li><a>Contact Us</a></li>
-            <li class="separator"></li>
-            <li>
-                <a href="">
-                    <img src="assets/img/header search icon.svg">
-                </a>
-                
-            </li>
-            <li>
-                <a href="">
-                    <img src="assets/img/header profile.svg">
-                </a>
-            </li>
-        </nav>
+      <a href="index.html" class="logo">
+        <img src="assets/img/header logo.svg" />
+      </a>
+      <nav>
+        <li data-current-page="true"><a href="index.html">Home</a></li>
+        <li><a href="pages/blog/blog.html">Story</a></li>
+        <li><a>Gallery</a></li>
+        <li><a>Contact Us</a></li>
+        <li class="separator"></li>
+        <li>
+          <a href="">
+            <img src="assets/img/header search icon.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/img/header profile.svg" />
+          </a>
+        </li>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="content_container">
-                <h1>
-                    <span>Let’s talk</span> about your next trip!
-                </h1>
+      <section class="hero">
+        <div class="content_container">
+          <h1><span>Let’s talk</span> about your next trip!</h1>
+          <p>
+            Share your favorite travel destination and we will feature it in our
+            next blog!
+          </p>
+          <div>
+            <a href="" class="button"> Share your story </a>
+            <a href="pages/blog/blog.html" class="watch_element">
+              <img src="assets/img/play light purple.svg" />
+              Watch highlights
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="featured_destination_block">
+        <div class="featured_destination_container">
+          <img src="assets/img/kamarucho preview.webp" alt="" />
+        </div>
+        <div class="information_container">
+          <div>
+            <div class="block_header">
+              <h3>Featured Destination</h3>
+              <h2>Our Kamarucho adventure blog</h2>
+            </div>
+            <p>
+              Visiting the Kamarucho district? Want to know the requirements on
+              travelling to Kamarucho during Tojo shananigans? Our blog might
+              help!
+            </p>
+          </div>
+          <a href="pages/blog/blog.html" class="watch_element">
+            <img src="assets/img/play purple.svg" />
+            Watch highlights
+          </a>
+        </div>
+      </section>
+      <section class="discover_world">
+        <div class="block_header">
+          <h3>Join our adventures</h3>
+          <h2>Discover the world with us</h2>
+        </div>
+
+        <div class="discover_cards_section">
+          <div class="discover_card card_desription">
+            <img src="assets/img/kamarucho card.jpg" alt="Kamarucho Photo" />
+            <div>
+              <h4>Kamarucho</h4>
+              <a href="">Discover</a>
+            </div>
+          </div>
+          <div class="discover_card card_desription">
+            <img src="assets/img/yokohama card.webp" alt="Yokohama Photo" />
+            <div>
+              <h4>Yokohama</h4>
+              <a href="">Discover</a>
+            </div>
+          </div>
+          <div class="discover_card card_desription">
+            <img src="assets/img/osaka card.webp" alt="Osaka Photo" />
+            <div>
+              <h4>Osaka</h4>
+              <a href="">Discover</a>
+            </div>
+          </div>
+          <div class="discover_card card_desription">
+            <img src="assets/img/okinawa card.webp" alt="Okinawa Photo" />
+            <div>
+              <h4>Okinawa</h4>
+              <a href="">Discover</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join_community_section">
+        <div class="block_header">
+          <h3>Let’s build a community</h3>
+          <h2>Join our next destination</h2>
+        </div>
+        <form>
+          <div class="card_desription">
+            <h4>Share your travels</h4>
+            <p>
+              Suggest a new travel destination that you want to see and we will
+              feature it in our blog.
+            </p>
+          </div>
+          <div class="form_fields">
+            <input
+              type="text"
+              name="destination_name"
+              placeholder="Destination name"
+            />
+            <select name="country_of_destination">
+              <option value="" disabled selected hidden>
+                Country of destination
+              </option>
+              <option value="">Japan</option>
+              <option value="">America</option>
+              <option value="">Russia</option>
+              <option value="">China</option>
+            </select>
+            <input type="text" name="your_name" placeholder="Your Name" />
+            <select name="Shooting_category">
+              <option value="" disabled selected hidden>
+                Shooting category
+              </option>
+              <option value="">Shooting Marks</option>
+              <option value="">Shooting Games</option>
+              <option value="">Shooting things</option>
+              <option value="">I don't know?</option>
+            </select>
+            <textarea
+              name=""
+              placeholder="Describe what kind of photos you want to focus on"
+              rows="4"
+            ></textarea>
+          </div>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </section>
+      <section class="recent_story">
+        <div class="block_header">
+          <h3>Catch up to our posts</h3>
+          <h2>Recent story entries</h2>
+        </div>
+        <div class="recent_story_container">
+          <div class="big_recent_story_card">
+            <img src="assets/img/millenium-tower story card.avif" alt="" />
+            <div>
+              <div class="card_desription">
+                <h4>Milenium Tower, Kamarucho</h4>
                 <p>
-                    Share your favorite travel destination and we will feature it in our next blog!
+                  The iconic Millennium Tower dominates Kamurocho's skyline and
+                  offers a vast, glittering panorama of the city at night
                 </p>
-                <div>
-                    <a href="" class = "button">
-                        Share your story
-                    </a>
-                    <a href="pages/blog/blog.html" class="watch_element">
-                        <img src="assets/img/play light purple.svg">
-                        Watch highlights
-                    </a>
-                </div>
+              </div>
+              <img src="assets/img/play purple.svg" alt="" />
             </div>
-        </section>
-        <section class="featured_destination_block"> 
-            <div class = "featured_destination_container">
-                <img src="assets/img/kamarucho preview.webp" alt="">
+          </div>
+          <div class="recent_story_list">
+            <div class="recent_story_card">
+              <img src="assets/img/grand story card.jpg" alt="" />
+              <div class="card_desription">
+                <h4>Cabare Grand, Osaka</h4>
+                <p>
+                  is more than just a nightlife spot; it is the glittering
+                  epicenter of 1980s Kamurocho's bubble economy
+                  <a href="">view full blog...</a>
+                </p>
+              </div>
             </div>
-            <div class="information_container">
-                <div>
-                    <div class="block_header">
-                        <h3>Featured Destination</h3>
-                        <h2>Our Kamarucho adventure blog</h2>
-                    </div>
-                    <p>Visiting the Kamarucho district? Want to know the requirements on travelling to Kamarucho during Tojo shananigans? Our blog might help! </p>
-                </div>
-                <a href="pages/blog/blog.html" class="watch_element">
-                    <img src="assets/img/play purple.svg">
-                        Watch highlights
-                </a>
+            <div class="recent_story_card">
+              <img src="assets/img/seryo high school story card.jpg" alt="" />
+              <div class="card_desription">
+                <h4>Seryo High School</h4>
+                <p>
+                  The school is a model of functional Japanese design, featuring
+                  sprawling, sunlit hallways that echo with the shuffle of
+                  indoor shoes <a href="">view full blog...</a>
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="discover_world">
-            <div class="block_header">
-                <h3>Join our adventures</h3>
-                <h2>Discover the world with us</h2>
+            <div class="recent_story_card">
+              <img src="assets/img/okinawa story card.webp" alt="" />
+              <div class="card_desription">
+                <h4>Really cool beach, Okinawa</h4>
+                <p>
+                  I mean, look at this beach. It looks almost perfect! Only
+                  downside - everything here looks like a screenshot from ps3
+                  game <a href="">view full blog...</a>
+                </p>
+              </div>
             </div>
-            
-            <div class="discover_cards_section">
-                <div class="discover_card card_desription">
-                    <img src="assets/img/kamarucho card.jpg" alt="Kamarucho Photo">
-                    <div>
-                        <h4>Kamarucho</h4>
-                        <a href="">Discover</a>
-                    </div>
-                </div>
-                <div class="discover_card card_desription">
-                    <img src="assets/img/yokohama card.webp" alt="Yokohama Photo">
-                    <div>
-                        <h4>Yokohama</h4>
-                        <a href="">Discover</a>
-                    </div>
-                </div>
-                <div class="discover_card card_desription">
-                    <img src="assets/img/osaka card.webp" alt="Osaka Photo">
-                    <div>
-                        <h4>Osaka</h4>
-                        <a href="">Discover</a>
-                    </div>
-                </div>
-                <div class="discover_card card_desription">
-                    <img src="assets/img/okinawa card.webp" alt="Okinawa Photo">
-                    <div>
-                        <h4>Okinawa</h4>
-                        <a href="">Discover</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="join_community_section">
-            <div class="block_header">
-                <h3>Let’s build a community</h3>
-                <h2>Join our next destination</h2>
-            </div>
-            <form>
-                <div class="card_desription">
-                    <h4>Share your travels</h4>
-                    <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
-                </div>
-                <div class="form_fields">
-                    <input type="text" name="destination_name" placeholder="Destination name">
-                    <select name="country_of_destination">
-                        <option value="" disabled selected hidden>Country of destination</option>
-                        <option value="">Japan</option>
-                        <option value="">America</option>
-                        <option value="">Russia</option>
-                        <option value="">China</option>
-                    </select>
-                    <input type="text" name="your_name" placeholder="Your Name">
-                    <select name="Shooting_category">
-                        <option value="" disabled selected hidden>Shooting category</option>
-                        <option value="">Shooting Marks</option>
-                        <option value="">Shooting Games</option>
-                        <option value="">Shooting things</option>
-                        <option value="">I don't know?</option>
-                    </select>
-                    <textarea name=""
-                    placeholder="Describe what kind of photos you want to focus on"
-                    rows="4" ></textarea>
-                </div>
-                <button type="submit" class="button">Submit</button>
-            </form>
-        </section>
-        <section class="recent_story">
-            <div class="block_header">
-                <h3>Catch up to our posts</h3>
-                <h2>Recent story entries</h2>
-            </div>
-            <div class="recent_story_container">
-                <div class="big_recent_story_card">
-                    <img src="assets/img/millenium-tower story card.avif" alt="">
-                    <div>
-                        <div class="card_desription">
-                            <h4>Milenium Tower, Kamarucho</h4>
-                            <p>The iconic Millennium Tower dominates Kamurocho's skyline and offers a vast, glittering panorama of the city at night</p>
-                        </div>
-                        <img src="assets/img/play purple.svg" alt="">
-                    </div>
-                </div>
-                <div class="recent_story_list">
-                    <div class="recent_story_card">
-                        <img src="assets/img/grand story card.jpg" alt="">
-                        <div class="card_desription">
-                            <h4>Cabare Grand, Osaka</h4>
-                            <p>is more than just a nightlife spot; it is the glittering epicenter of 1980s Kamurocho's bubble economy <a href="">view full blog...</a></p>
-                        </div>
-                    </div>
-                    <div class="recent_story_card">
-                        <img src="assets/img/seryo high school story card.jpg" alt="">
-                        <div class="card_desription">
-                            <h4>Seryo High School</h4>
-                            <p>The school is a model of functional Japanese design, featuring sprawling, sunlit hallways that echo with the shuffle of indoor shoes <a href="">view full blog...</a></p>
-                        </div>
-                    </div>
-                    <div class="recent_story_card">
-                        <img src="assets/img/okinawa story card.webp" alt="">
-                        <div class="card_desription">
-                            <h4>Really cool beach, Okinawa</h4>
-                            <p>I mean, look at this beach. It looks almost perfect! Only downside - everything here looks like a screenshot from ps3 game <a href="">view full blog...</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer_menu">
-        <p>
-            © 2022, Talking Travel. All Rights Reserved.
-        </p>
-        <nav>
-            <li><a href="">Home</a></li>
-            <li><a href="">Story</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact Us</a></li>
-        </nav>
+      <p>© 2022, Talking Travel. All Rights Reserved.</p>
+      <nav>
+        <li><a href="">Home</a></li>
+        <li><a href="">Story</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Contact Us</a></li>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
