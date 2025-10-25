@@ -32,17 +32,17 @@
 
 @font-face {
     font-family: RobotoBold;
-    src: url("../Assets/Fonts/Roboto-Bold.ttf");
+    src: url("../assets/fonts/roboto-bold.ttf");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("../Assets/Fonts/Roboto-Regular.ttf");
+    src: url("../assets/fonts/roboto-regular.ttf");
 }
 
 @font-face {
     font-family: ChangaOne;
-    src: url("../Assets/Fonts/ChangaOne-Regular.ttf");
+    src: url("../Assets/fonts/changaone-regular.ttf");
 }
 
 
