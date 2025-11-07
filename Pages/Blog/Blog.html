@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/blog.css">
+    <link rel="stylesheet" href="../../css/ui_kit.css">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <script src="../../scripts/videoplayer.js"></script>
+    <title>Talking Travel</title>
+</head>
+<body>
+    <header class="main_menu">
+        <a href="../../index.html" class="logo">
+            <img src="../../assets/img/header Logo.svg">
+        </a>
+        <nav>
+            <li><a href="../../index.html">Home</a></li>
+            <li data-current-page="true"><a href="../blog/blog.html">Story</a></li>
+            <li><a>Gallery</a></li>
+            <li><a>Contact Us</a></li>
+            <li class="separator"></li>
+            <li>
+                <a href="">
+                    <img src="../../assets/img/header search icon.svg">
+                </a>
+                
+            </li>
+            <li>
+                <a href="">
+                    <img src="../../assets/img/header profile.svg">
+                </a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <article class="blog_article">
+            <div class="blog_article_header">
+                <div class="block_header">
+                    <h3>Popular Destinations</h4>
+                    <h2>Hello Kamarucho!</h3>
+                </div> 
+                <div class="blog_author_block">
+                    <img src="../../assets/img/author photo.jpg" alt="">
+                    <div class="blog_author">
+                        <h5>Nurgazin Ivan</h5>
+                        <p>Author / Photographer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video_container">
+                <video id="blog_video" 
+                    disablepictureinpicture
+                    src="../../assets/videos/yakuza「gmv」somewhere i belong.mp4" 
+                    poster="../../assets/img/kamarucho preview.webp">
+                </video>
+                <button id="articlePlayButton"class="customPlayButton">
+
+                </button>
+            </div>
+            <div class = "blog_text_paragraph">
+                <h3>Our Kamarucho adventure story!</h3>
+                <p>
+                    Atmosphere, atmosphere, atmosphere! Kamurocho offers a neon-drenched vibe that cannot be found elsewhere. The Millennium Tower for example. This skyscraper is a sight to behold, and seeing it up close is more imposing than we've ever imagined. Want to enjoy a nice and cozy bowl of ramen? Well, Kamurocho will never fail you.
+                </p>
+            </div>
+            <div class="blog_callout">
+                <div class="callout_cards_container">
+                    <img src="../../assets/img/callout shangri-la.jpg" alt="" class="callout_card first_callout">
+                    <img src="../../assets/img/callout serena.jpg" alt="" class="callout_card second_callout">
+                    <img src="../../assets/img/callout starDust.jpg" alt="" class="callout_card third_callout">
+                </div>
+                <div class="blog_callout_copyrighting blog_text_paragraph">
+                    <div class="quotes_container">
+                        <img src="../../assets/img/quotes.svg" alt="">    
+                        <h2>One of the most chaotic patrols we've done so far..</h2>
+                    </div>
+                    <p>As a district in a sprawling metropolis, Kamurocho with its narrow streets has to compete not only with other entertainment districts but with entire virtual worlds. There are, for instance, no quiet, open fields.</p>
+                    <p>The advantage is that a trip to Kamurocho benefits from a dense concentration of vibrant experiences in a few city blocks.</p>
+                    <a href=""  class="button">View full gallery</a>
+                </div>
+            </div>
+            <p class = "blog_text_paragraph">
+                The advantage is that a trip to Kamurocho benefits from a dense concentration of vibrant experiences in a few city blocks, offering possibilities for all kinds of action at any hour, day or night, although primarily after sunset. The offers of entertainment as well as underground activities are manifold, but unfortunately the constant risk of a random street fight is high, and this can discourage the faint-hearted from lingering. Despite this major drawback, legions of players from all over the world dive in every year.
+            </p>
+            <div class="higlights_container blog_text_paragraph" >
+                <h3>Hightlights</h3>
+                <div class="highlights_cards_container">
+                    <div class="highlight_card">
+                        <img src="../../assets/img/highLight kamarucho hills.jpg" alt="">
+                        <p>Builded by one eyed demon guy!</p>
+                    </div>
+                    <div class="highlight_card">
+                        <img src="../../assets/img/highLight millenium tower.jpg" alt="">
+                        <p>There was many shootouts!</p>
+                    </div>
+                    <div class="highlight_card">
+                        <img src="../../assets/img/highlight sega club.jpg" alt="">
+                        <p>I love to play Virtual Fighter here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="disclamer_block">
+                <h6>Disclamer</h6>
+                <p>The COVID-19 pandemic has dealt a severe blow to the tourism business in Yakuza. Although it is a minor position in the Japan export balance, it is nevertheless of considerable importance for those regions of the country that attract domestic and foreign visitors. As a consequence of the lockdown measures, combined with close borders and travel bans, tourism collapsed and only briefly and partly recovered in summer. Its future is uncertain and depends on people’s (future guests’) attitudes and decisions as much as on the economy, political measures and, of course, the progress of the pandemic.</p>
+            </div>
+        </article>>
+        <section class="join_community_section">
+            <div class="block_header">
+                <h3>Let’s build a community</h3>
+                <h2>Join our next destination</h2>
+            </div>
+            <form>
+                <div class="card_desription">
+                    <h4>Share your travels</h4>
+                    <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+                </div>
+                <div class="form_fields">
+                    <input type="text" name="destination_name" placeholder="Destination name">
+                    <select name="country_of_destination">
+                        <option value="" disabled selected hidden>Country of destination</option>
+                        <option value="">Japan</option>
+                        <option value="">America</option>
+                        <option value="">Russia</option>
+                        <option value="">China</option>
+                    </select>
+                    <input type="text" name="your_name" placeholder="Your Name">
+                    <select name="Shooting_category">
+                        <option value="" disabled selected hidden>Shooting category</option>
+                        <option value="">Shooting Marks</option>
+                        <option value="">Shooting Games</option>
+                        <option value="">Shooting things</option>
+                        <option value="">I don't know?</option>
+                    </select>
+                    <textarea name=""
+                    placeholder="Describe what kind of photos you want to focus on"
+                    rows="4" ></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer_menu">
+        <p>
+            © 2022, Talking Travel. All Rights Reserved.
+        </p>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">Story</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </nav>
+    </footer>
+</body>
+</html>

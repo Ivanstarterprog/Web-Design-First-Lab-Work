@@ -1,0 +1,170 @@
+.button {
+    display:flex;
+    align-items: center;
+    background-color: #8A53FF;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #8A53FF;
+    width: 165px;
+    justify-content: center;
+    height: 46px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #FFFFFF;
+    color: #8A53FF;
+}
+
+.video_container{
+    width: 100%;
+    display: grid;
+    grid-template: "video-area";
+    place-items: center;
+    *{
+        grid-area: video-area;
+    }
+    video{
+        width: 100%;
+    }
+    .customPlayButton{
+        background-image: url("../assets/img/play button.svg");
+        z-index: 10;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: clamp(25px, 100%, 105px);
+        height: clamp(25px, 100%, 105px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8; 
+    }
+}
+
+.main_menu{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2px 119px;
+    @media (max-width: 768px) {
+        padding: 2px 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 2px 20px;
+    }
+    .logo{
+        img{
+            width: 10vw;
+        }
+    }
+
+    nav{
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        list-style-type: none;
+        @media (max-width: 768px) {
+            gap: 9px;
+        }
+        @media (max-width: 480px) {
+            gap: 4px;
+        }
+        .separator{
+            border: 1px solid #EEEEEE;
+        }
+
+        li a:hover{
+            cursor: pointer;
+        }
+
+    }
+}
+
+.watch_element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: black;     
+}
+
+.information_container{
+    .watch_element{
+        color: #8A53FF;
+    }
+}
+
+.join_community_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 120px 0px;
+    width: 100%;
+    background-image: url("../assets/img/join comunity background.png");
+    block-header{
+        gap: 15px;
+    }
+    @media (max-width: 1150px) {
+        padding: 60px 0px;
+        gap: 15px;
+    }
+    form{
+        max-width: 657px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        background-color: #FFFFFF;
+        padding: 28px 30px;
+        border-radius: 12px;
+        .card_desription{
+            gap: 6px;
+        }
+    }
+}
+
+.form_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input[type="text"], select, textarea, select option{
+        padding: 16px 12px;
+        border: 1px solid;
+        border-radius: 4px;
+        resize:none;
+    }
+}
+
+.disclamer_block{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 19px 29px;
+    background-color: var(--disclamer-background);
+    h6, p{
+        margin: 0px;
+    }
+}
+
+.footer_menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 120px;
+    @media (max-width: 768px) {
+        padding: 2px 60px;
+    }
+    @media (max-width: 480px) {
+        padding: 2px 15px;
+    }
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+}
